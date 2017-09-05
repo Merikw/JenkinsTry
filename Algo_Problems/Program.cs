@@ -12,21 +12,21 @@ namespace Algo_Problems
             Head h = new Head();
 
             #region 1
-                        string[] input = { "word", "localization", "internationalization", "pneumonoultramicroscopicsilicovolcanoconiosis"};
+            string[] input = { "word", "localization", "internationalization", "pneumonoultramicroscopicsilicovolcanoconiosis"};
 
-                        DateTime dt1 = DateTime.Now;
-                        List<string> result = h.CreateAbrv(input);
-                        DateTime dt2 = DateTime.Now;
+            DateTime dt1 = DateTime.Now;
+            List<string> result = h.CreateAbrv(input);
+            DateTime dt2 = DateTime.Now;
 
-                        TimeSpan time = dt2 - dt1;
+            TimeSpan time = dt2 - dt1;
 
-                        Console.WriteLine($"Time: {time.ToString()} and memory used: {GC.GetTotalMemory(false) / 10000000}");
+            Console.WriteLine($"Time: {time.ToString()} and memory used: {GC.GetTotalMemory(false) / 10000000}");
 
-                        foreach (string r in result)
-                        {
-                            Console.WriteLine(r);
-                        }
-                        #endregion 1
+            foreach (string r in result)
+            {
+                Console.WriteLine(r);
+            }
+            #endregion 1
 
             #region 2
             DateTime dt11 = DateTime.Now;
